@@ -1,0 +1,59 @@
+%ic {
+	font-family: "icons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+[class*="_icon-"] {
+	&:before {
+		@extend %ic;
+		display: block;
+	}
+}
+
+._icon-Cart-color .path1:before {
+	content: "\e900";
+	color: rgb(255, 173, 76);
+  }
+  ._icon-Cart-color .path2:before {
+	content: "\e901";
+	margin-left: -1.0869140625em;
+	color: rgb(255, 173, 76);
+  }
+  ._icon-Cart-color .path3:before {
+	content: "\e902";
+	margin-left: -1.0869140625em;
+	color: rgb(255, 173, 76);
+  }
+  ._icon-Cart-color .path4:before {
+	content: "\e903";
+	margin-left: -1.0869140625em;
+	color: rgb(255, 173, 76);
+  }
+  ._icon-Cart-color .path5:before {
+	content: "\e904";
+	margin-left: -1.0869140625em;
+	color: rgb(254, 247, 239);
+  }
+  ._icon-Cart-color .path6:before {
+	content: "\e905";
+	margin-left: -1.0869140625em;
+	color: rgb(254, 247, 239);
+  }
+  ._icon-Arrow-Down:before {
+	content: "\e900";
+  }
+  ._icon-cart:before {
+	content: "\e901";
+  }
+  ._icon-Profile:before {
+	content: "\e902";
+  }
+  ._icon-Search:before {
+	content: "\e903";
+  }
+  

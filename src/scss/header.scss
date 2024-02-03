@@ -1,0 +1,112 @@
+.header {
+    @include adaptiveValue("padding-top", 37, 10);
+    @include adaptiveValue("padding-bottom", 37, 10);
+    background-color: $bgPage;
+
+    &__container {
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        padding-right: toRem(0);
+        padding-left: auto;
+    
+    }
+
+    &__logo {
+        color: rgba(58, 58, 58, 0.80);
+        @include adaptiveValue("font-size", 32, 18);
+        line-height: 156.25%; /* 50/32 */
+        font-weight: 700;
+        letter-spacing: 0.32px;
+        position: relative;
+            z-index: 6;
+        & span {
+            color: $orange;
+        }
+    }
+
+    &__menu {
+    }
+
+    &__icons {
+        font-size: toRem(24);
+        display: flex;
+        @include adaptiveValue("gap", 32, 18);
+        align-items: center;
+        position: relative;
+        z-index: 5;
+        & span {
+            cursor: pointer;
+            @media (any-hover: hover){
+                &:hover{
+                    transition: color 0.5s ease 0s;
+                    color: $orange;
+                }
+            }
+        }
+    }
+}
+.menu {
+    display: flex;
+    align-items: center;
+    max-width: toRem(587);
+    &__icon {
+    font-size: toRem(24);
+    }
+
+    &__body {
+         @media (max-width:$mobile){
+        .menu-open & {
+            display: flex;
+            justify-content: flex-start;
+            background-color: #E5E5E5; 
+            z-index: 5;
+            }
+        }
+    }
+
+    &__list {
+        display: flex;
+        @include adaptiveValue("column-gap", 88, 43, 2, $containerWidth, 767.98);
+        @media (max-width:$mobile){
+              .menu-open & {
+                flex-direction: column;
+                align-items: flex-start;
+                padding-top: toRem(140);
+                row-gap: toRem(40);
+                margin-right: toRem(60);
+                font-size: toRem(20);
+            }
+        }
+    }
+
+    &__item {
+    }
+
+    &__link {
+        @media (any-hover: hover){
+            &:hover{
+                transition: color 0.5s ease 0s;
+                color: $orange;
+            }
+        }
+        &-arrow {
+            display: flex;
+            flex-direction: row-reverse;
+            @include adaptiveValue("gap", 14, 8);
+        }
+    }
+}
+.icon-menu {
+}
+._icon-Arrow-Down {
+    }
+
+._icon-Search {
+    }
+
+._icon-Profile {
+    }
+
