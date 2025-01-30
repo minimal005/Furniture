@@ -22,8 +22,12 @@
       </div>
       <div class="hero__main">
         <div class="hero__controler">
-          <button class="hero__left _icon-Arrow-Down"></button>
-          <button class="hero__right _icon-Arrow-Down"></button>
+          <button
+            class="hero__button hero__button--left _icon-Arrow-Down"
+          ></button>
+          <button
+            class="hero__button hero__button--right _icon-Arrow-Down"
+          ></button>
         </div>
         <div class="hero__slider swiper">
           <div class="hero__wrapper swiper-wrapper">
@@ -72,8 +76,12 @@
             </div>
           </div>
           <div class="interiors__controler">
-            <button class="interiors__left _icon-Arrow-Down"></button>
-            <button class="interiors__right _icon-Arrow-Down"></button>
+            <button
+              class="interiors__button interiors__button--left _icon-Arrow-Down"
+            ></button>
+            <button
+              class="interiors__button interiors__button--right _icon-Arrow-Down"
+            ></button>
           </div>
         </div>
       </div>
@@ -167,8 +175,8 @@
         </ul>
       </nav>
     </div>
-    <div data-showmore="items" class="products__furniture">
-      <ul data-showmore-content="4" class="products__content">
+    <div data-showmore class="products__furniture">
+      <ul data-showmore-content="405" class="products__content">
         <li data-pid="1" class="products__card card-products">
           <div class="card-products__body">
             <div class="card-products__header">
@@ -229,10 +237,70 @@
             <div class="card-products__price">Rp 400.000</div>
           </div>
         </li>
+        <li data-pid="5" class="products__card card-products">
+          <div class="card-products__body">
+            <div class="card-products__header">
+              <div class="card-products__subscribe">sofa</div>
+              <div class="card-products__title">glossy cube</div>
+              <div class="card-products__cart">
+                <img src="@img/products/cart.svg" alt="cart" />
+              </div>
+            </div>
+            <div class="card-products__image">
+              <img src="@img/products/1.png" alt="sofa" />
+            </div>
+            <div class="card-products__price">Rp 400.000</div>
+          </div>
+        </li>
+        <li data-pid="6" class="products__card card-products">
+          <div class="card-products__body">
+            <div class="card-products__header">
+              <div class="card-products__subscribe">Light</div>
+              <div class="card-products__title">Floor Monolamp</div>
+              <div class="card-products__cart">
+                <img src="@img/products/cart.svg" alt="cart" />
+              </div>
+            </div>
+            <div class="card-products__image">
+              <img src="@img/products/2.png" alt="Light" />
+            </div>
+            <div class="card-products__price">Rp 400.000</div>
+          </div>
+        </li>
+        <li data-pid="7" class="products__card card-products">
+          <div class="card-products__body">
+            <div class="card-products__header">
+              <div class="card-products__subscribe">Chair</div>
+              <div class="card-products__title">Vintage Chair</div>
+              <div class="card-products__cart">
+                <img src="@img/products/cart.svg" alt="cart" />
+              </div>
+            </div>
+            <div class="card-products__image">
+              <img src="@img/products/3.png" alt="Chair" />
+            </div>
+            <div class="card-products__price">Rp 400.000</div>
+          </div>
+        </li>
+        <li data-pid="8" class="products__card card-products">
+          <div class="card-products__body">
+            <div class="card-products__header">
+              <div class="card-products__subscribe">Bed</div>
+              <div class="card-products__title">Comfort King Bed</div>
+              <div class="card-products__cart">
+                <img src="@img/products/cart.svg" alt="cart" />
+              </div>
+            </div>
+            <div class="card-products__image">
+              <img src="@img/products/6.png" alt="Bed" />
+            </div>
+            <div class="card-products__price">Rp 400.000</div>
+          </div>
+        </li>
       </ul>
       <button
         hidden
-        data-showmore-button
+        data-showmore-button="800"
         type="button"
         class="products__more _icon-Arrow-Down"
       >
